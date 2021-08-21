@@ -4,6 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Django Pagination</title>
@@ -24,24 +27,17 @@
         background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
     }
 
+    /*
+
     h2 {
         font-weight: 900
     }
-    .navbar{
-        background: #fff !important;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
+
     .container-fluid {
         max-width: 1200px
     }
 
-    .card {
-        background: #fff;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
-        transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-        border: 0;
-        border-radius: 1rem
-    }
+
 
     .card-img,
     .card-img-top {
@@ -56,12 +52,6 @@
         font-size: 1rem
     }
 
-    .card-img-top {
-        width: 100%;
-        max-height: 180px;
-        object-fit: contain;
-        padding: 30px
-    }
 
     .card h2 {
         font-size: 1rem
@@ -81,43 +71,11 @@
         padding: 5px 10px 5px 10px;
         font-size: .7rem;
         font-weight: 600;
-        border-radius: 3px;
+        border-radius: 0;
         text-transform: uppercase
     }
 
-    .top-right {
-        position: absolute;
-        top: 24px;
-        left: 24px;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        font-size: 1rem;
-        font-weight: 900;
-        background: #ff5722;
-        line-height: 90px;
-        text-align: center;
-        color: white
-    }
 
-    .top-right span {
-        display: inline-block;
-        vertical-align: middle
-    }
-
-    @media (max-width: 768px) {
-        .card-img-top {
-            max-height: 250px
-        }
-    }
-
-    .over-bg {
-        background: rgba(53, 53, 53, 0.85);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(0.0px);
-        -webkit-backdrop-filter: blur(0.0px);
-        border-radius: 10px
-    }
 
     .btn {
         font-size: 1rem;
@@ -125,11 +83,6 @@
         text-transform: uppercase;
         padding: 5px 50px 5px 50px
     }
-
-    .box .btn {
-        font-size: 1.5rem
-    }
-
     @media (max-width: 1025px) {
         .btn {
             padding: 5px 40px 5px 40px
@@ -140,23 +93,6 @@
         .btn {
             padding: 5px 30px 5px 30px
         }
-    }
-
-    .btn-warning {
-        background: none #f7810a;
-        color: #ffffff;
-        fill: #ffffff;
-        border: none;
-        text-decoration: none;
-        outline: 0;
-        box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25);
-        border-radius: 100px
-    }
-
-    .btn-warning:hover {
-        background: none #ff962b;
-        color: #ffffff;
-        box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)
     }
 
     .bg-success {
@@ -195,57 +131,176 @@
         transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12)
     }
 
-    .box-img {
-        max-width: 300px
-    }
+}
+.products{
+    min-height: 100vh;
+}
 
-    .thumb-sec {
-        max-width: 300px
-    }
 
-    @media (max-width: 576px) {
-        .box-img {
-            max-width: 200px
-        }
+.products{
+    min-height: 100vh;
+}
 
-        .thumb-sec {
-            max-width: 200px
-        }
-    }
 
-    .inner-gallery {
-        width: 60px;
-        height: 60px;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        margin: 1px;
-        display: inline-block;
-        overflow: hidden;
-        -o-object-fit: cover;
-        object-fit: cover
-    }
 
-    @media (max-width: 370px) {
-        .box .btn {
-            padding: 5px 40px 5px 40px;
-            font-size: 1rem
-        }
-    }
 
-    .disclaimer {
-        font-size: .9rem;
-        color: darkgray
-    }
 
-    .related h3 {
-        font-weight: 900
-    }
 
-    footer {
-        background: #212529;
-        height: 80px;
-        color: #fff
-    }
+
+
+
+
+
+
+
+
+
+
+
+.seller {
+    width: 150px;
+    height: 50px;
+    background-color: #8c14e7;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative
+}
+
+.details {
+    margin-top: 20px
+}
+
+.card .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px
+}
+*/
+
+
+
+.buttons {
+    display: flex;
+    margin-top: 15px
+}
+
+.buttons button:nth-child(1) {
+    width: 100%;
+    height: 40px;
+    margin-right: 10px;
+    border: none;
+    background-color: #fff;
+    border: 2px solid blue;
+    border-radius: 4px;
+    color: blue;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.buttons button:hover:nth-child(1) {
+    background-color: blue;
+    color: #fff
+}
+
+.buttons button:nth-child(2) {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.navbar{
+    background: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+footer {
+    background: #212529;
+    color: #fff;
+    margin-bottom: none;
+}
+
+.socials{
+    font-size: 40px;
+}
+.socials i{
+    color: #c6c6c6;
+}
+.socials i:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.badge span {
+    background-color: #4a4f6f;
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: #fed85d;
+    justify-content: center;
+    align-items: center
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px
+}
+
+.progress div {
+    background-color: red
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
+}
     </style>
 
 
@@ -294,17 +349,45 @@
 
 
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom mb-0">
-        
-        <p class="col-md-4 mb-0 text-muted">© 2021 ShopX, Inc</p>
-        <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-        </ul>
+
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">ShopX, Inc</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">ShopX</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 socials col-md-6 d-flex justify-content-between align-items-center">
+                    <div class="d-inline p-2 text-white"><i class="fab fa-twitter"></i></div>
+                    <div class="d-inline p-2 text-white"><i class="fab fa-facebook-f"></i></div>
+                    <div class="d-inline p-2 text-white"><i class="fab fa-instagram"></i></div>
+                    <div class="d-inline p-2 text-white"><i class="fab fa-youtube"></i></div>
+                </div>
+            </div>
+        </div>
     </footer>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

@@ -1,24 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="container mt-5 mb-3">
+    <div class="row">
 
 
-<main>
-    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-            
-            
-            <div class="col">
-                <div class="card h-100 shadow-sm"> <img src="{{product.img.url}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-primary">ASUS Rog</span> <span class="float-end price-hp">${{ productlist.price}}</span> </div>
-                        <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi.</h5>
-                        <div class="text-center my-4"> <a href="#" class="btn btn-warning">Check offer</a> </div>
+        {% for product in productlist %}
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">${{ product.price}}</h6> <span>{{ product.brand}}</span>
+                        </div>
+                    </div>
+                    <div class="badge"> <span>{{ product.condition }}</span> </div>
+                </div>
+                <div class="">
+                    <div class="mt-2">
+                        <img src="{{product.image.url}}" class="card-img-top" alt="...">
+                        <div class="mt-3"> <span class="text1">42 Applied <span class="text2">of 70 capacity</span></span> </div>
+                        <div class="buttons"> <button>Save</button> <button>Buy</button> </div>
                     </div>
                 </div>
             </div>
-            
-
         </div>
+        {% endfor %}
+
+
     </div>
-</main>
+</div>
 {% endblock content %}

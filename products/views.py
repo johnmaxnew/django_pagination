@@ -5,6 +5,6 @@ from .models import Product
 
 
 def product_list(request):
-    productlist = Product.objects.all().order_by('-published')
+    productlist = Product.objects.all().order_by('-created')
 
     return render(request, "product-list.html", {'productlist': productlist})
