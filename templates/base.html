@@ -26,331 +26,171 @@
         font-family: var(--font3);
         background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
     }
-
-    /*
-
-    h2 {
-        font-weight: 900
+    .navbar-brand{
+        font-weight: bold;
+        font-size: 30px;
+        color: blue !important;
+    }
+    .navbar-brand span{
+        font-weight: 400;
+        color: #212529 !important;
     }
 
-    .container-fluid {
-        max-width: 1200px
+    .buttons {
+        display: flex;
+        margin-top: 15px
     }
 
-
-
-    .card-img,
-    .card-img-top {
-        border-top-left-radius: calc(1rem - 1px);
-        border-top-right-radius: calc(1rem - 1px)
+    .buttons button:nth-child(1) {
+        width: 100%;
+        height: 40px;
+        margin-right: 10px;
+        border: none;
+        background-color: #fff;
+        border: 2px solid blue;
+        border-radius: 4px;
+        color: blue;
+        cursor: pointer;
+        transition: all 0.5s
     }
 
-    .card h5 {
-        overflow: hidden;
-        height: 56px;
-        font-weight: 900;
-        font-size: 1rem
+    .buttons button:hover:nth-child(1) {
+        background-color: blue;
+        color: #fff
     }
 
-
-    .card h2 {
-        font-size: 1rem
-    }
-
-    .card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)
-    }
-
-    .label-top {
-        position: absolute;
-        background-color: #8bc34a;
+    .buttons button:nth-child(2) {
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: blue;
         color: #fff;
-        top: 8px;
-        right: 8px;
-        padding: 5px 10px 5px 10px;
-        font-size: .7rem;
-        font-weight: 600;
-        border-radius: 0;
-        text-transform: uppercase
+        border-radius: 4px;
+        cursor: pointer
+    }
+
+    .navbar{
+        background: #fff !important;
+        font-size: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
 
-
-    .btn {
-        font-size: 1rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        padding: 5px 50px 5px 50px
+    footer {
+        background: #212529;
+        color: #fff;
+        margin-bottom: none;
     }
-    @media (max-width: 1025px) {
-        .btn {
-            padding: 5px 40px 5px 40px
-        }
+    footer ul li a{
+        text-decoration: none;
     }
 
-    @media (max-width: 250px) {
-        .btn {
-            padding: 5px 30px 5px 30px
-        }
+    .socials{
+        font-size: 40px;
+    }
+    .socials i{
+        color: #c6c6c6;
+    }
+    .socials i:hover{
+        color: #fff;
+    }
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     }
 
-    .bg-success {
-        font-size: 1rem;
-        background-color: #f7810a !important
+    .c-details span {
+        font-weight: 300;
+        font-size: 13px
     }
 
-    .bg-danger {
-        font-size: 1rem
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #eee;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 39px
     }
 
-    .price-hp {
-        font-size: 1rem;
-        font-weight: 600;
-        color: darkgray
+    .badge span {
+        background-color: #4a4f6f;
+        width: 60px;
+        height: 25px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        display: flex;
+        color: #fed85d;
+        justify-content: center;
+        align-items: center
     }
 
-    .amz-hp {
-        font-size: .7rem;
-        font-weight: 600;
-        color: darkgray
+    .progress {
+        height: 10px;
+        border-radius: 10px
     }
 
-    .fa-question-circle:before {
-        color: darkgray
+    .progress div {
+        background-color: red
     }
 
-    .fa-plus:before {
-        color: darkgray
+    .text1 {
+        font-size: 14px;
+        font-weight: 600
     }
 
-    .box {
-        border-radius: 1rem;
-        background: #fff;
-        box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
-        transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12)
+    .text2 {
+        color: #a5aec0
     }
-
-}
-.products{
-    min-height: 100vh;
-}
-
-
-.products{
-    min-height: 100vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.seller {
-    width: 150px;
-    height: 50px;
-    background-color: #8c14e7;
-    padding: 5px;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 14px
-}
-
-.card {
-    width: 250px;
-    height: 200px;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    position: relative
-}
-
-.details {
-    margin-top: 20px
-}
-
-.card .image {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px
-}
-*/
-
-
-
-.buttons {
-    display: flex;
-    margin-top: 15px
-}
-
-.buttons button:nth-child(1) {
-    width: 100%;
-    height: 40px;
-    margin-right: 10px;
-    border: none;
-    background-color: #fff;
-    border: 2px solid blue;
-    border-radius: 4px;
-    color: blue;
-    cursor: pointer;
-    transition: all 0.5s
-}
-
-.buttons button:hover:nth-child(1) {
-    background-color: blue;
-    color: #fff
-}
-
-.buttons button:nth-child(2) {
-    width: 100%;
-    height: 40px;
-    border: none;
-    background-color: blue;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer
-}
-
-.navbar{
-    background: #fff !important;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-
-footer {
-    background: #212529;
-    color: #fff;
-    margin-bottom: none;
-}
-
-.socials{
-    font-size: 40px;
-}
-.socials i{
-    color: #c6c6c6;
-}
-.socials i:hover{
-    color: #fff;
-}
-
-
-
-
-
-
-
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-}
-
-.c-details span {
-    font-weight: 300;
-    font-size: 13px
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    background-color: #eee;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 39px
-}
-
-.badge span {
-    background-color: #4a4f6f;
-    width: 60px;
-    height: 25px;
-    padding-bottom: 3px;
-    border-radius: 5px;
-    display: flex;
-    color: #fed85d;
-    justify-content: center;
-    align-items: center
-}
-
-.progress {
-    height: 10px;
-    border-radius: 10px
-}
-
-.progress div {
-    background-color: red
-}
-
-.text1 {
-    font-size: 14px;
-    font-weight: 600
-}
-
-.text2 {
-    color: #a5aec0
-}
     </style>
 
 
   </head>
   <body>
     
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Shop<span>X</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Delivery</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Product 1</a></li>
-            <li><a class="dropdown-item" href="#">Product 2</a></li>
-            <li><a class="dropdown-item" href="#">Product 3</a></li>
-            <li><a class="dropdown-item" href="#">Product 4</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Shop<span>X</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Delivery</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                <li><a class="dropdown-item" href="#">Product 3</a></li>
+                <li><a class="dropdown-item" href="#">Product 4</a></li>
+            </ul>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
     </div>
-  </div>
-</nav>
+    </nav>
 
     
 
     {% block content %}
     {% endblock content %}
 
-
-
-
-
-
+    
     <!-- FOOTER -->
     <footer class="w-100 py-4 flex-shrink-0">
         <div class="container py-4">
