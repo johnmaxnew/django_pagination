@@ -1,2 +1,2 @@
-# Implementing django's finite pagination
+# Implementing Django's finite pagination
 ![](static/img/screenshot.png)
