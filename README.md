@@ -1,2 +1,2 @@
 # django_pagination
-![](img/screenshot.png)
+![](static/img/screenshot.png)
